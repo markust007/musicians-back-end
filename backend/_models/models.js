@@ -1,0 +1,1 @@
+require('../musicians/musicians.model')
