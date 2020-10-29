@@ -2,12 +2,11 @@ const mongoose = require('mongoose')
 const Musician = mongoose.model('Musician')
 
 exports.findAll = (req, res) => {
-  return res.sendStatus(202)
-  //   Musician.find({}, (err, results) => {
-  //     if(err)
-  //         return console.log(err)
-  //     return res.send(results)
-  // })
+    Musician.find({}, (err, results) => {
+      if(err)
+          return console.log(err)
+      return res.send(results)
+    })
 }
 
 exports.findById = (req, res) => {
