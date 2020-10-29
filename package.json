@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel --presets es2015 -d deploy/ backend",
+    "build": "babel --presets es2015 -d deploy/ backend index.js",
     "serve": "nodemon ./backend/index.js"
   },
   "author": "Mark Carey",
